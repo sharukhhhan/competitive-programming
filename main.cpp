@@ -3,27 +3,11 @@
 using namespace std;
 
 int main() {
-    int n, k;
-    cin >> n >> k;
-    vector<vector<int>> g(n);
-    vector<char> used(n);
-    for (int i = 0; i < k; i++) {
-        int st, fn;
-        cin >> st >> fn;
-        g[st-1].push_back(fn-1);
-    }
-    int start;
-    cin >> start;
+    vector<int> a = {3, 4, 6, 10};
 
-    function<void(int)> dfs = [&](int v) {
-        used[v] = true;
-        for (int i: g[v]) {
-            if (!used[i]) {
-                dfs(i);
-            }
-        }
-    };   
+    cout << upper_bound(a.begin(), a.end(), 2) - a.begin() - 1;
+    // cout << lower_bound(a.begin(), a.end(), 2) - a.begin();
 
-    dfs(start);
-
+    cout << upper_bound(a.begin(), a.end(), 11) - a.begin() - 1;
+    // cout << lower_bound(a.begin(), a.end(), 11) - a.begin();
 }

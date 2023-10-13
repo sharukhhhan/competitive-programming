@@ -3,15 +3,6 @@
 using namespace std;
 
 int main() {
-    int n = 0;
-    function<void(int)> reck = [&](int a) {
-        if (a == 5) {
-            return;
-        }
-        cout << n << "\n";
-        n++;
-        reck(n);
-    };
+    vector<int> a = {1, 4, 6, 7};
 
-    reck(n);
 }
