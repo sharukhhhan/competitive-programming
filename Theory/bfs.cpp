@@ -12,7 +12,7 @@ int main() {
         g[start-1].push_back(finish-1);
     }
     cin >> s;
-
+    
     queue<int> q;
     vector<int> d(n), p(n);
     vector<char> used(n);
@@ -32,6 +32,8 @@ int main() {
                 p[to] = v; // записываем, откуда пришли к вершине to
             }
         }
+
+        
     }
 
     int to;

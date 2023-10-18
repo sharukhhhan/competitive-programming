@@ -3,6 +3,10 @@
 using namespace std;
 
 int main() {
-    vector<int> a = {1, 4, 6, 7};
+    vector<int> a = {3, 1, 4};
+
+    int b = a.pop_back();
+
+    cin >> 
 
 }
