@@ -67,8 +67,6 @@ int main() {
     vector<int> a(n);
     for (int i = 0; i < n; i++) cin >> a[i];
 
-    long long sum = 0;
-    for (int i = 0; i < n; i++) sum += a[i];
     long long l = 1, r = 25 * 1e9 + 1;
     while (r - l > 1) {
         long long mid = (l + r) / 2;
