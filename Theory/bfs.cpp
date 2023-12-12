@@ -39,7 +39,7 @@ int main() {
     int to;
     cin >> to;
     // выведем путь
-    if (!used[to]) {
+    if (!used[--to]) {
         cout << "NO PATH";
     } else {
         vector<int> path;
@@ -48,7 +48,7 @@ int main() {
         }
         reverse(path.begin(), path.end());
         for (auto& x: path) {
-            cout << x << " ";
+            cout << x+1 << " ";
         }
     }
 }

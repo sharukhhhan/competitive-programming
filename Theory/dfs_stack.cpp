@@ -39,7 +39,7 @@ int main() {
 
     int to;
     cin >> to;
-    if (!used[to]) {
+    if (!used[--to]) {
         cout << "NO PATH!!";
     } else {
 
